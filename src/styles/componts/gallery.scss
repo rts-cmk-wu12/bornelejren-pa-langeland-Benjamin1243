@@ -1,0 +1,12 @@
+.imageGallery{
+    display: grid;
+    padding: 1rem;
+    img{
+        object-fit: cover;
+        transition: 0.4s;
+        height: 400px;
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+}
