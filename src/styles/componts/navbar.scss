@@ -1,0 +1,50 @@
+@use "./variabels.scss";
+
+.navbar{
+padding:  0.5rem 10%;
+margin: 0 auto;
+background-color: variabels.$main-color;
+    &__list{
+        justify-content: space-between;
+        display: flex;
+        
+       
+    }
+&__listItem{
+        list-style: none;
+        align-self: center;
+        &--logoDiv{
+            max-width: 20%;
+           
+        }
+        
+       
+    }
+    &__Link{
+        color: white;
+        text-decoration: none;
+        font-family: variabels.$header;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    &__logo{
+       margin: 0 auto;
+        color: white;
+       transition: 0.4s;
+       width: 30%;
+        &:hover{
+           filter:brightness(10%);
+        }
+       
+    }
+    &__logoText{
+       font-size: 1rem;
+        text-align: center;
+        
+       
+    }
+    &__logoDiv{
+        display: flex;
+        flex-direction: column;
+    }
+}
